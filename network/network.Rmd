@@ -1,0 +1,27 @@
+---
+title: "News Network"
+author: "Ming-Yu Liu"
+date: "October 18, 2015"
+output: 
+  html_document: 
+    keep_md: yes
+    theme: united
+    toc: yes
+---
+
+```{r}
+# functions for visualizing the graphs are sourced in 
+suppressWarnings( suppressMessages( source("network.R") ) )
+
+```
+
+## Network Visualization 
+
+```{r, fig.height=12, fig.width=15}
+
+NetworkPlot("NYtimes")
+NetworkPlot("BBC")
+
+```
+
+
