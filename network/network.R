@@ -69,7 +69,7 @@ NetworkPlot <- function( news, layer = 4, grouping = "start" )
 	# 2. preprocessing 
 	# exclude the layer column to remove duplicated edges or else ggnet won't work 
 	unique_rows <- !duplicated( edgelist[ , -3, with = FALSE ] )
-	edgelist    <- edgelist[ unique_rows, ]
+	edgelist    <- edgelist[ unique_rows & complete.cases(edgelist), ]
 	
 	# remove the layer column and convert to igraph and network type	
 	graph_df <- graph.data.frame( edgelist[ , -3, with = FALSE ] )
