@@ -20,5 +20,5 @@ Testing out web scraping functionality for R, python and visualizing news networ
 **network** (in progress)
 
 - `network.R` Functions for creating the network visualization. Loads in the edge list dataset from the bbc and NYtimes folder respectively, preprocess and visualize it.
-- `network.*` Different file-versions of the report. Or simply view the report from the following [link](http://ethen8181.github.io/news-networks/network.html).
+- `network.*` Different file-versions of the report. Or simply view the report from the following [link](http://ethen8181.github.io/news-networks/network/network.html).
 
