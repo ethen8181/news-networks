@@ -61,7 +61,7 @@ NetworkPlot <- function( news, layer = 4, grouping = "start" )
 	{
 		filepath <- paste0( "/Users/ethen/news-networks/bbc/bbc_data_new/edge_list_", layer, ".rds" )
 		edgelist <- readRDS(filepath)
-		edgelist <- data.table( do.call( rbind, edgelist ) )
+		edgelist <- rbindlist(edgelist)
 
 		palette <- "Set2"
 	}		

@@ -9,7 +9,7 @@ Testing out web scraping functionality for R, python and visualizing news networ
 
 - `NYtimes.py` Web scraping functions and process. Starts from the world news section. News from “Related Coverage” on the right side of the webpage serves as the news’ recommendation.
 - `header.csv` List of user-agent headers that goes along with the web scraping functions.
-- `NYtimes_data_new` Stores the data in python objects (.pkl). Including starting news (“news_info_1.csv”), edge_list and recommendation_list. The last number behind the data denotes in which layer was the data scraped. Edge lists are also stored in .csv file to be used with R for creating the network visualizations. To avoid confusions, edge list data are appended on top of one another. e,g, “edge_list_4” will contain news’ edge list from layer 1 to 4, “edge_list_3” will contain news’ edge list from layer 1 to 3 and so on. On the other hand, news’  recommendation data are stored separately. e.g. ““recommendation_list_4” will only store the new’ title and links if it is generated in the fourth layer.
+- `NYtimes_data_new` Stores the data in python objects (.pkl). Including starting news (“news_info_1.csv”), edge_list and recommendation_list. The last number behind the data denotes in which layer was the data scraped. Edge lists are also stored in .csv file to be used with R for creating the network visualizations. To avoid confusions, edge list data are appended on top of one another. e,g, “edge_list_4” will contain news’ edge list from layer 1 to 4, “edge_list_3” will contain news’ edge list from layer 1 to 3 and so on. On the other hand, news’ recommendation data are stored separately. e.g. ““recommendation_list_4” will only store the news’ title and corresponding links if it is generated in the fourth layer.
 
 **bbc** Stores the commensurate things as the NYtimes folder. 2015.10.23
   
@@ -20,5 +20,5 @@ Testing out web scraping functionality for R, python and visualizing news networ
 **network** (in progress)
 
 - `network.R` Functions for creating the network visualization. Loads in the edge list dataset from the bbc and NYtimes folder respectively, preprocess and visualize it.
-- `network.*` Different file-versions of the report. Or simply view the report from the following [link](http://ethen8181.github.io/news-networks/network/network.html).
+- `network.*` Different file-type of the report. Or simply view the report from the following [link](http://ethen8181.github.io/news-networks/network/network.html).
 
